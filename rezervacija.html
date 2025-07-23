@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="sr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Rent A Konobar - Rezervacija</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  </head>
+  <body class="bg-gray-50 font-sans">
+    <div class="max-w-xl mx-auto py-10 px-4">
+      <h1 class="text-3xl font-bold mb-6 text-center text-gray-800">Rezervacija konobara</h1>
+      <form action="#" method="POST" class="bg-white p-6 rounded shadow-md space-y-4">
+        <div>
+          <label class="block text-sm font-medium text-gray-700">Ime i prezime</label>
+          <input type="text" name="ime" required class="mt-1 block w-full border border-gray-300 rounded-md p-2"/>
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-700">Email</label>
+          <input type="email" name="email" required class="mt-1 block w-full border border-gray-300 rounded-md p-2"/>
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-700">Broj telefona</label>
+          <input type="text" name="telefon" required class="mt-1 block w-full border border-gray-300 rounded-md p-2"/>
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-700">Datum događaja</label>
+          <input type="date" name="datum" required class="mt-1 block w-full border border-gray-300 rounded-md p-2"/>
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-700">Lokacija</label>
+          <input type="text" name="lokacija" required class="mt-1 block w-full border border-gray-300 rounded-md p-2"/>
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-700">Dodatne napomene</label>
+          <textarea name="napomene" rows="4" class="mt-1 block w-full border border-gray-300 rounded-md p-2"></textarea>
+        </div>
+        <button type="submit" class="w-full bg-brown-700 text-white py-2 px-4 rounded hover:bg-brown-800">Pošalji rezervaciju</button>
+      </form>
+    </div>
+  </body>
+</html>
